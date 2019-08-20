@@ -2,9 +2,7 @@ version: '3.7'
 
 services:
   rabbit:
-    build:
-      context: ./docker
-      dockerfile: rabbit.Dockerfile
+    image: rabbitmq:alpine
     ports:
       - "5672:5672"
       - "15672:15672"
